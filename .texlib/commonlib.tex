@@ -1,0 +1,49 @@
+\usepackage{xeCJK,xeCJKfntef}
+\newcommand{\myvphantom}[0]{\vphantom{QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm1234567890ςρθδφγηξλζχψβμ\"A}}
+\xeCJKsetup{PunctStyle=plain,RubberPunctSkip=false,CJKglue=\myvphantom\hskip 0pt,CJKecglue=\myvphantom\hskip 0.22em plus 200pt}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt
+
+\setmainfont{Brygada 1918}
+\setromanfont{Brygada 1918}
+\setsansfont{Nimbus Sans}
+\setmonofont{CMU Typewriter Text}
+\setCJKmainfont{Noto Serif CJK SC}
+\setCJKromanfont{Noto Serif CJK SC}
+\setCJKsansfont{Noto Sans CJK SC}
+\setCJKmonofont{Noto Sans CJK SC}
+% =========================================
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\frenchspacing
+\linespread{1.2}
+
+
+
+
+
+\newcommand{\commonheader}[5]{
+    % argv: sn, org, date, title, comments
+    \hypersetup{pdftitle={#1 - #4}}
+    \begin{minipage}{\linewidth}
+        \normalsize
+        \sffamily
+        FSCO/#1\hfill#2\par\vskip 5pt
+        \hrule
+        \vskip 30pt
+        \begin{center}
+            \rmfamily
+            \textsc{Fictional States Cooperation Organization}\par
+            \textsc{Organisation de Coopération des États Fictifs}\par\vskip 30pt
+            \parbox{\linewidth-6em}{\center\huge\sffamily\fontspec{Nimbus Roman}#4}
+            \sffamily
+            \par\vskip 40pt
+            \normalsize#3\par\vskip 15pt
+            \small\sffamily#5
+        \end{center}
+    \end{minipage}
+    \vskip 25pt
+    \hrule
+    \vskip 35pt
+}
