@@ -1,0 +1,35 @@
+\input{.texlib/sec-note.tex}
+
+\begin{document}
+\commonheader{Sec/SG/2023/Note.0002}{Secretariat / Secretary-General}{2023-02-22}{Document Numbering Specification}{Publisher: Oz von Waltzdort}
+
+\section{Preface}
+\begin{enumerate}
+	\item The documents produced in the Organization shall be numbered for fluent indexing and archiving.
+	\item The Secretariat hereby establishes this Specification for the numbering of documents.
+	\item All staff at the Secretariat and its subdivisions shall follow the guidelines specified herein.
+	\item In text representation, a document ID may be prefixed by ``FSCO/''
+	      to indicate that it belongs to Fictional States Cooperation Organization,
+	      as a mean of avoiding ambiguity with other organizations.
+\end{enumerate}
+
+\section{General Assembly}
+\begin{enumerate}
+	\item A Resolution made at the General Assembly shall be numbered in the following format:
+	      \texttt{GA/[YEAR]/Res.[SEQ]}, where YEAR is a 4-digit number and SEQ is an autoincremental serial number
+	      (left-pad with `0' to keep it 4-digit long).
+          This SEQ is scoped and is reset for each year.\\
+	      Example: ``\texttt{GA/2023/Res.0001}''.
+	\item When a Resolution is in draft phase, we shall add a suffix in the following format: \texttt{/D.[DRAFTSEQ]},
+	      where DRAFTSEQ is an autoincremental serial number (no padding).
+          This DRAFTSEQ is scoped and is reset for each Resolution.\\
+	      Example: ``\texttt{GA/2023/Res.0001/D.1}''.
+	\item When a meeting is held at the General Assembly, its minutes shall be numbered in the following format:
+	      \texttt{GA/[YEAR]/Min.[SEQ]}, where YEAR is a 4-digit number and SEQ is an autoincremental serial number
+	      (left-pad with `0' to keep it 4-digit long).
+          This SEQ is scoped and is reset for each year.
+	      This SEQ has no relation with the SEQ for Resolutions.\\
+	      Example: ``\texttt{GA/2023/Min.0001}''.
+\end{enumerate}
+
+\end{document}
